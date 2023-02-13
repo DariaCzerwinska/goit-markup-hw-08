@@ -1,18 +1,24 @@
 .customers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+
   &__item {
-    margin-right: 30px;
+    width: calc(100% / 2 - 30px);
+    @include tablet {
+      width: calc(100% / 3 - 30px);
+    }
+    @include desktop {
+      width: calc(100% / 6 - 30px);
+    }
   }
-  &__item:last-child {
-    margin-right: 0px;
-  }
+
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
