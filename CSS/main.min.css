@@ -724,7 +724,6 @@ body {
 .social-media__link:hover .social-media__icon,
 .social-media__link:focus .social-media__icon {
   fill: var(--primary-bgd-color);
-  background-color: var(--accent-color);
 }
 .social-media__icon {
   cursor: pointer;
@@ -792,7 +791,6 @@ body {
 .footer {
   background-color: var(--secondary-bgd-color);
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer__logo-adress {
   margin-bottom: 10px;
@@ -848,15 +846,12 @@ body {
     margin-right: 70px;
   }
 }
-.adress {
-  padding-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .adress {
     padding-bottom: 60px;
   }
 }
-.adress__item {
+.adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .adress__item--contact {
